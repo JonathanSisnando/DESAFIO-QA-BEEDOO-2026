@@ -38,31 +38,31 @@ Para aprofundar a análise, recomenda-se a execução dos seguintes cenários t�
 | **Responsividade** | Teste em diferentes Viewports (Mobile/Tablet). | Garantir que o header e a tabela de cursos se adaptem sem perda de funcionalidade. |
 | **Status Codes** | Inspeção via aba Network (F12). | Validar se as respostas de API seguem o padrão REST (ex: 201 para criação). |
 
-Decisões tomadas para criação dos testes
+# Documentação de Planeamento e Análise de Testes
 
-## Decisões Tomadas para a Criação dos Testes
+## 1. Explicação do Raciocínio Durante a Análise
 
-**1. Foco e Escopo Inicial**
+O meu raciocínio prioriza, num primeiro momento, a análise do front-end e da interface do utilizador (UI/UX). Esta abordagem inicial é estratégica, pois a usabilidade e a clareza visual são os primeiros pontos de contacto e de aprovação por parte dos utilizadores finais e stakeholders.
+
+Após esta validação estática e visual, o meu foco volta-se para a recolha de critérios de aceitação e regras de negócio. Isto permite-me mapear o "caminho feliz" e construir um entendimento sólido do âmbito de atuação. Com esta base, executo os testes funcionais documentados no meu charter exploratório.
+
+Por fim, aprofundo a análise funcional inspecionando a camada de rede e comunicação com a API. O objetivo é validar a integridade das requisições e respostas HTTP (GET, POST, PUT, DELETE), garantindo que o fluxo de dados entre o cliente e o servidor ocorra sem erros.
+
+---
+
+## 2. Decisões Tomadas para a Criação dos Testes
+
+### 2.1. Foco e Âmbito Inicial
 * **Priorização do Fluxo Principal:** O teste do CRUD será iniciado pela operação de Criação (CREATE) do Curso, por ser o fluxo fundamental do sistema.
-* **Validação de Front-end:** A etapa inicial focará estritamente no comportamento do Front-end, garantindo a documentação imediata de todos os bugs encontrados nesta camada.
+* **Validação de Front-end:** A etapa inicial focará estritamente no comportamento do Front-end, garantindo a documentação imediata de todos os defeitos encontrados nesta camada.
 
-**2. Técnicas de Teste Aplicadas**
+### 2.2. Técnicas de Teste Aplicadas
 * **Partição de Equivalência e Validação de Campos:** Os testes abrangerão a validação de campos obrigatórios e a inserção de valores específicos, com atenção especial aos campos de "Data" e "Nº de Vagas".
 * **Critérios de Aceitação:** Serão validados inputs válidos e inválidos com base nos critérios de aceitação vigentes para cada campo.
 
-**3. Processo de Execução, Registro e Evidência**
+### 2.3. Processo de Execução, Registo e Evidência
 * **Estrutura de Trabalho:** O processo seguirá a ordem de criação dos cenários de teste, execução, captura de resultados e geração de evidências.
-* **Documentação de Bugs e Melhorias:** Todo comportamento inesperado ou oportunidade de melhoria seguirá o padrão rigoroso de: Evidenciar, Relatar e Documentar. Os registros utilizarão uma estrutura padronizada de Bug Report.
+* **Documentação de Defeitos e Melhorias:** Todo o comportamento inesperado ou oportunidade de melhoria seguirá o padrão rigoroso de: Evidenciar, Relatar e Documentar. Os registos utilizarão uma estrutura padronizada de Bug Report.
 
-**4. Abordagem Exploratória Contínua**
-* **Testes Adicionais:** Além do escopo definido inicialmente, a execução não se limitará de forma engessada. Testes adicionais e não previstos no Charter Exploratório original serão conduzidos e documentados conforme a necessidade surgir durante a exploração contínua da aplicação.
-
-
-Explicação do seu raciocínio durante a análise
-
-
-o meu raciocinio prioriza primeiramente em analisar o front end, em como ele está desenvolvido, pois é o que irá impressionar de primeira mão o stakeholders, pois um UI/UX limpo e bem claro, é o que primeiro tem que ser aprovado por quem irá usalo
-
-Após realizar a analise estática do sistema, irei focar no caminho feliz, coletar os critérios de aceitação e regras de negócio para poder construir um entendimento do que é testado e assim aplicar os testes que estão mapeados no charter exploratório, para colhimento do Teste funcional, após isso, irei realizar testes não funcionais no sistema em busca de erros de requisição: Get, Post, read, del
-
-
+### 2.4. Abordagem Exploratória Contínua
+* **Testes Adicionais:** Para além do âmbito definido inicialmente, a execução não se limitará de forma rígida. Testes adicionais e não previstos no Charter Exploratório original serão conduzidos e documentados conforme a necessidade surgir durante a exploração contínua da aplicação.
