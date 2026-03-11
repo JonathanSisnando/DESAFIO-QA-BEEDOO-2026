@@ -1,3 +1,19 @@
+## Estrutura de Diretórios e Arquivos
+
+**Acesso a Pasta compartilhada onde contém: Bugs, Evidência de Testes, Casos de testes e o Relatório:** 
+
+
+[Pasta do Google Drive - Artefatos de Teste](https://drive.google.com/drive/folders/1gy8cXdVkhhWAGMCS0SkJA5JSHlmS1Cg9?usp=sharing)
+
+Os artefatos gerados durante a validação da aplicação foram organizados na seguinte estrutura para facilitar a auditoria e a avaliação técnica:
+
+* **Diretório /Bugs:** Armazena de forma centralizada todas as evidências isoladas referentes aos defeitos (bugs) levantados durante o processo de testes.
+* **Diretório /Evidência da Execução dos Testes:** Contém o material comprobatório (capturas de tela ou vídeos) da execução sistemática dos cenários de testes planejados.
+* **Arquivo CASOS DE TESTE (Planilha):** Documento contendo a matriz de planejamento, que documenta os cenários de testes e o roteiro detalhado de cada caso de teste (passo a passo e resultado esperado).
+* **Arquivo Relatório de testes - BeeDoo (Word):** Documento consolidado que informa os resultados das validações, listando todos os defeitos encontrados de forma categorizada e separada por seu respectivo grau de criticidade.
+
+
+
 
 ## Relatório de Análise Técnica Inicial - Projeto Beedoo QA Challenge
 
